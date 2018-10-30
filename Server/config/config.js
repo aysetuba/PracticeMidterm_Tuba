@@ -7,11 +7,15 @@ var config = {
                    root: rootPath,    
                    app: {      name: 'PracticeMidterm'    },    
                    port: 3300,  
+                   db: 'mongodb://127.0.0.1/todo-dev'
+
         },  
         production: {    
                      root: rootPath,    
                      app: {      name: 'PracticeMidterm'    },    
-                      port: 80,  }
+                      port: 80, 
+                      db: 'mongodb://127.0.0.1/todo'
+                     }
          };
 
 module.exports = config[env];
